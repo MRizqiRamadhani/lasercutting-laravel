@@ -1,0 +1,21 @@
+.card-img {
+    position: relative;
+    background-image: url('https://i.pinimg.com/474x/37/ba/54/37ba5432743a2832908c25555867a53f.jpg');
+    width: 220px;
+    height: 220px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+}
+
+.card-img button:nth-of-type(1) {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.card-img button:nth-of-type(2) {
+    position: absolute;
+    top: 0px;
+    right: 40px;
+}
