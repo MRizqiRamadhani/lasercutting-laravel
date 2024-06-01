@@ -19,3 +19,9 @@
     top: 0px;
     right: 40px;
 }
+
+.card-img button:nth-of-type(3) {
+    position: absolute;
+    top: 0px;
+    right: 40px;
+}
