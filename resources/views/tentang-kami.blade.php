@@ -1,5 +1,6 @@
 @extends('layouts.navbar')
 @extends('layouts.footer')
+@section('login-logout', 'login')
 @section('tentang-kami-classes', 'active')
 <!DOCTYPE html>
 <html lang="en">

@@ -1,4 +1,5 @@
 @extends('layouts.navbar')
+@section('login-logout', 'Login')
 @section('kontak-classes', 'active')
 <!DOCTYPE html>
 <html lang="en">

@@ -3,6 +3,7 @@
 @section('title', 'Register - Laser Cutting Poliban')
 @section('form-title', 'REGISTER')
 @section('button-label', 'Register')
+@section('login-logout', 'Login')
 
 @section('bottom-text')
     Sudah punya akun? <a href="{{ route('login') }}">Masuk</a>
