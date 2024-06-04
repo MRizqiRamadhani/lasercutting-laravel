@@ -1,6 +1,7 @@
 @extends('layouts.navbar')
 @extends('layouts.footer')
-@section('login-logout', 'Admin')
+@section('beranda-classes', 'active')
+@section('login-logout', 'Login')
 
 
 <!DOCTYPE html>
