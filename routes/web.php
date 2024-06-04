@@ -17,3 +17,6 @@ Route::get('/tentang-kami', function () {
 Route::get('/admin', function () {
     return view('admin.beranda');
 })->name('admin.beranda');
+Route::get('/admin/tambah-barang', function () {
+    return view('admin.tambah-barang');
+})->name('admin.tambah-barang');
