@@ -20,3 +20,6 @@ Route::get('/admin', function () {
 Route::get('/admin/tambah-barang', function () {
     return view('admin.tambah-barang');
 })->name('admin.tambah-barang');
+Route::get('/admin/tambah-pesanan', function () {
+    return view('admin.tambah-pesanan');
+})->name('admin.tambah-pesanan');
