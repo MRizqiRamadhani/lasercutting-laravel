@@ -1,5 +1,8 @@
 @extends('layouts.navbar')
+@extends('layouts.form-admin')
 @section('login-logout', 'Admin')
+@section('title', 'Tambah barang')
+@section('right-button', 'Tambah')
 
 <!DOCTYPE html>
 <html lang="en">
@@ -25,40 +28,28 @@
 
 <body class="d-flex align-items-center py-4 bg-body-tertiary">
 
-    <main class="form-signin m-auto" style="padding-top: 120px">
-        <div class="form">
-            <form>
-                <h1 class="h3 mb-3 fw-normal text-center mb-2">Tambah barang</h1>
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Nama barang</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                        placeholder="name@example.com">
-                </div>
-                <div class="mb-3">
-                    <label for="formFile" class="form-label">Default file input example</label>
-                    <input class="form-control" type="file" id="formFile">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Harga barang</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                        placeholder="name@example.com">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Stok barang</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                        placeholder="name@example.com">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Deskripsi</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <button type="button" class="btn btn-secondary">Kembali</button>
-                    <button type="button" class="btn btn-info">Tambah</button>
-                </div>
-            </form>
+    @section('form-content')
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Nama barang</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
         </div>
-    </main>
+        <div class="mb-3">
+            <label for="formFile" class="form-label">Default file input example</label>
+            <input class="form-control" type="file" id="formFile">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Harga barang</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Stok barang</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Deskripsi</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+    @endsection
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
