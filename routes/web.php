@@ -11,6 +11,9 @@ Route::get('/register', [AuthController::class, 'registerPage'])->name('register
 Route::get('/kontak', function () {
     return view('kontak');
 })->name('kontak');
+Route::get('/pesanan', function () {
+    return view('pesanan');
+})->name('pesanan');
 Route::get('/tentang-kami', function () {
     return view('tentang-kami');
 })->name('tentang-kami');
