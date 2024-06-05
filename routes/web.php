@@ -26,3 +26,6 @@ Route::get('/admin/tambah-barang', function () {
 Route::get('/admin/tambah-pesanan', function () {
     return view('admin.tambah-pesanan');
 })->name('admin.tambah-pesanan');
+Route::get('/admin/edit-barang', function () {
+    return view('admin.edit-barang');
+})->name('admin.edit-barang');
