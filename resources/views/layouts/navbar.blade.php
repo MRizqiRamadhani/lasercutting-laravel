@@ -19,6 +19,10 @@
                             style="font-size: 20px;">Beranda</a>
                     </li>
                     <li class="nav-item me-5">
+                        <a class="nav-link @yield('pesanan-classes')" aria-current="page" href="{{ route('pesanan') }}"
+                            style="font-size: 20px;">Pesanan</a>
+                    </li>
+                    <li class="nav-item me-5">
                         <a class="nav-link @yield('tentang-kami-classes')" href="{{ route('tentang-kami') }}"
                             style="font-size: 20px;">Tentang kami</a>
                     </li>
