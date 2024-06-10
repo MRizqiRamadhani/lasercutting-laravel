@@ -1,36 +1,97 @@
-<!DOCTYPE html>
-<html lang="en">
+   {{-- login modal --}}
+   <div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true">
+       <div class="modal-dialog modal-dialog-centered">
+           <div class="modal-content">
+               <div class="modal-header">
+                   <h5 class="modal-title" id="authentication-modalLabel">Login</h5>
+                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                   <form class="space-y-4" action="#">
+                       <div class="mb-3">
+                           <label for="email" class="form-label">Email</label>
+                           <input type="email" class="form-control" id="email" name="email"
+                               placeholder="nama@gmail.com" required>
+                       </div>
+                       <div class="mb-3">
+                           <label for="password" class="form-label">Password</label>
+                           <input type="password" class="form-control" id="password" name="password"
+                               placeholder="••••••••" required>
+                       </div>
+                       <div class="d-flex justify-content-between align-items-center mb-3">
+                           <div class="form-check">
+                               <input class="form-check-input" type="checkbox" value="" id="remember" required>
+                               <label class="form-check-label" for="remember">
+                                   Remember me
+                               </label>
+                           </div>
+                           <a href="#" class="text-sm text-decoration-none text-muted">Lost Password?</a>
+                       </div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ asset('css/auth.css') }}">
-    <title>@yield('title', 'Laser Cutting Poliban')</title>
-</head>
+                       <button type="submit" class="btn btn-primary w-100">Login</button>
 
-<body class="d-flex align-items-center py-4 bg-body-tertiary">
+                       <div class="text-center mt-3">
+                           Belum punya akun? <a href="#" class="text-decoration-none text-muted"
+                               data-bs-toggle="modal" data-bs-target="#exampleModal2">Buat Akun</a>
+                       </div>
+                   </form>
+               </div>
+           </div>
+       </div>
+   </div>
+   {{-- end-modal login --}}
 
-    <main class="form-signin m-auto" style="padding-top: 120px">
-        <div class="form">
-            <form>
-                {{-- <img class="mb-4" src="{{ asset('img/workshop.jpg') }}" alt="" width="72" height="57"> --}}
-                <h1 class="h3 mb-3 fw-normal text-center mb-5">@yield('form-title')</h1>
+   {{-- modal register --}}
+   <div class="modal fade" id="exampleModal2" tabindex="-1" aria-hidden="true">
+       <div class="modal-dialog modal-dialog-centered">
+           <div class="modal-content">
+               <div class="modal-header">
+                   <h5 class="modal-title" id="authentication-modalLabel">Register</h5>
+                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                   <form class="space-y-4" action="#">
 
-                @yield('form-content')
+                       <div class="mb-3">
+                           <label for="name" class="form-label">Nama</label>
+                           <input type="text" class="form-control" id="name" name="name"
+                               placeholder="Nama anda" required>
+                       </div>
+                       <div class="mb-3">
+                           <label for="email" class="form-label">Email</label>
+                           <input type="email" class="form-control" id="email" name="email"
+                               placeholder="nama@gmail.com" required>
+                       </div>
+                       <div class="mb-3">
+                           <label for="password" class="form-label">Password</label>
+                           <input type="password" class="form-control" id="password" name="password"
+                               placeholder="••••••••" required>
+                       </div>
+                       <div class="mb-3">
+                           <label for="no-telepon" class="form-label">No Telepon</label>
+                           <input type="text" class="form-control" id="no-telepon" name="no-telepon"
+                               placeholder="+62" required>
+                       </div>
+                       <div class="d-flex justify-content-between align-items-center mb-3">
+                           <div class="form-check">
+                               <input class="form-check-input" type="checkbox" value="" id="remember"
+                                   required>
+                               <label class="form-check-label" for="remember">
+                                   Remember me
+                               </label>
+                           </div>
+                           <a href="#" class="text-sm text-decoration-none text-muted">Lost Password?</a>
+                       </div>
 
-                <button class="btn btn-primary w-100 py-2 mt-5" type="submit">@yield('button-label')</button><br>
-                <p class="mt-3 text-center">@yield('bottom-text')</p>
-            </form>
-        </div>
-        <p class="mt-3 text-body-secondary text-center">&copy; Laser Cutting Poliban</p>
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-    </script>
+                       <button type="submit" class="btn btn-primary w-100">Register</button>
 
-</body>
-
-</html>
+                       <div class="text-center mt-3">
+                           Sudah punya akun? <a href="#" class="text-decoration-none text-muted"
+                               data-bs-dismiss="modal">Masuk</a>
+                       </div>
+                   </form>
+               </div>
+           </div>
+       </div>
+   </div>
+   {{-- end-modal register --}}
